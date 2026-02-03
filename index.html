@@ -12,25 +12,20 @@
     </style>
 </head>
 <body>
-
-    <header class="py-10 text-center border-b border-gray-800">
+    <header class="py-6 text-center border-b border-gray-800 sticky top-0 bg-black/90 backdrop-blur-md z-50">
         <div class="flex justify-center mb-4">
-            <img src="CDN-logo.png" alt="Cartel de Nova Logo" class="h-32 drop-shadow-[0_0_15px_rgba(59,130,246,0.4)]">
+            <img src="CDN-logo.png" alt="Logo" class="h-20 drop-shadow-[0_0_10px_rgba(59,130,246,0.3)]">
         </div>
-        <h1 class="text-5xl font-bold tracking-tighter italic uppercase">Cartel de <span class="text-blue-500">Nova</span></h1>
-        <p class="text-gray-400 mt-2 uppercase tracking-widest text-xs font-semibold">Plata o Plomo • 4LifeRP</p>
+        
+        <nav class="flex justify-center space-x-8 text-sm font-bold uppercase tracking-widest">
+            <a href="index.html" class="text-blue-500 border-b-2 border-blue-500 pb-1">Hauptseite</a>
+            <a href="regeln.html" class="text-gray-400 hover:text-white transition">Regelwerk</a>
+            <a href="mitglieder.html" class="text-gray-400 hover:text-white transition">Mitglieder</a>
+            <a href="diplomatie.html" class="text-gray-400 hover:text-white transition">Diplomatie</a>
+        </nav>
     </header>
 
     <main class="max-w-6xl mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
-        
-        <section class="card">
-            <h2 class="text-2xl font-bold mb-4 border-l-4 border-blue-600 pl-2">Hirachie</h2>
-            <ul>
-                <li class="flex justify-between py-2 border-b border-gray-800"><span>13 | Patron</span> <span class="text-blue-400 font-bold">Joe Marlboro</span></li>
-                <li class="flex justify-between py-2 border-b border-gray-800"><span>12 | Stv. Patron</span> <span class="text-blue-400 font-bold">Ben K Marlboro</span></li>
-            </ul>
-        </section>
-
         <section class="card border-red-900/30">
             <h2 class="text-2xl font-bold mb-4 text-red-500 border-l-4 border-red-600 pl-2">Blacklist</h2>
             <ul class="list-disc list-inside text-gray-300 space-y-2">
@@ -47,8 +42,6 @@
                 <div class="p-3 bg-gray-800/30 border border-gray-600 rounded text-gray-400 font-bold">Grove (Neutral)</div>
             </div>
         </section>
-
     </main>
-
 </body>
 </html>
