@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="CDN-logo.png">
-    <title>Cartel de Nova | 4LifeRP</title>
+    <title>Hirachie | Cartel de Nova</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body { background-color: #050505; color: white; font-family: 'Inter', sans-serif; }
         .card { background: #111; border: 1px solid #222; padding: 20px; border-radius: 8px; }
+        .rank-divider { color: #3b82f6; font-weight: 800; text-transform: uppercase; letter-spacing: 0.2em; font-size: 0.7rem; padding: 1.5rem 0.5rem 0.5rem 0.5rem; border-bottom: 1px solid #1f2937; margin-bottom: 0.5rem; }
     </style>
 </head>
 <body>
@@ -17,7 +18,6 @@
         <div class="flex justify-center mb-4">
             <img src="CDN-logo.png" alt="Logo" class="h-20 drop-shadow-[0_0_10px_rgba(59,130,246,0.3)]">
         </div>
-        
         <nav class="flex justify-center space-x-8 text-sm font-bold uppercase tracking-widest">
             <a href="index.html" class="text-gray-400 hover:text-white transition">Hauptseite</a>
             <a href="hirachie.html" class="text-blue-500 border-b-2 border-blue-500 pb-1">Hirachie</a>
@@ -25,29 +25,35 @@
         </nav>
     </header>
 
-    <main class="max-w-6xl mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
-        <h2 class="text-2xl font-bold mb-8 border-l-4 border-yellow-500 pl-4 uppercase tracking-wider">Fraktions-Hirachie</h2>
-        <section class="card">
-            <ul>
-                <li class="flex justify-between py-2 border-b border-gray-800"><span>----Leitung----</span></li>
-                <li class="flex justify-between py-2 border-b border-gray-800"><span>13 | Patron</span></li>
-                <li class="flex justify-between py-2 border-b border-gray-800"><span>12 | Stv. Patron</span></li>
-                <li class="flex justify-between py-2 border-b border-gray-800"><span>11 | Kommandant</span></li>
-                <li class="flex justify-between py-2 border-b border-gray-800"><span>----High Rank----</span></li>
-                <li class="flex justify-between py-2 border-b border-gray-800"><span>10 | Captain</span></li>
-                <li class="flex justify-between py-2 border-b border-gray-800"><span>09 | Truppenleiter</span></li>
-                <li class="flex justify-between py-2 border-b border-gray-800"><span>08 | Aufseher</span></li>
-                <li class="flex justify-between py-2 border-b border-gray-800"><span>----Mid Rank----</span></li>
-                <li class="flex justify-between py-2 border-b border-gray-800"><span>07 | Voll Mitglied</span></li>
-                <li class="flex justify-between py-2 border-b border-gray-800"><span>06 | Stamm Mitglied</span></li>
-                <li class="flex justify-between py-2 border-b border-gray-800"><span>05 | Ehren mmitglied</span></li>
-                <li class="flex justify-between py-2 border-b border-gray-800"><span>04 | Senior Mitglied</span></li>
-                <li class="flex justify-between py-2 border-b border-gray-800"><span>----Low Rank----</span></li>
-                <li class="flex justify-between py-2 border-b border-gray-800"><span>03 | Mitglied</span></li>
-                <li class="flex justify-between py-2 border-b border-gray-800"><span>02 | Schläger</span></li>
-                <li class="flex justify-between py-2 border-b border-gray-800"><span>01 | Anwärter</span></li>
-                <li class="flex justify-between py-2 border-b border-gray-800"><span>00 | Novize</span></li>
-            </ul>
+    <main class="max-w-3xl mx-auto p-6">
+        <h2 class="text-2xl font-bold mb-8 border-l-4 border-blue-600 pl-4 uppercase tracking-wider">Fraktions-Hirachie</h2>
+        
+        <section class="card border-blue-900/20">
+            <div class="flex flex-col">
+                
+                <div class="rank-divider flex items-center"><span class="w-2 h-2 bg-blue-600 rounded-full mr-2"></span> Leitung</div>
+                <div class="flex justify-between py-3 px-2 border-b border-gray-800/50 hover:bg-white/5"><span>13 | Patron</span> <span class="text-blue-400 font-mono">Joe Marlboro</span></div>
+                <div class="flex justify-between py-3 px-2 border-b border-gray-800/50 hover:bg-white/5"><span>12 | Stv. Patron</span> <span class="text-blue-400 font-mono">Ben K Marlboro</span></div>
+                <div class="flex justify-between py-3 px-2 border-b border-gray-800/50 hover:bg-white/5"><span>11 | Kommandant</span> <span class="text-gray-600">-</span></div>
+
+                <div class="rank-divider flex items-center text-gray-400"><span class="w-2 h-2 bg-gray-500 rounded-full mr-2"></span> High Rank</div>
+                <div class="flex justify-between py-3 px-2 border-b border-gray-800/50 hover:bg-white/5"><span>10 | Captain</span> <span class="text-gray-600">-</span></div>
+                <div class="flex justify-between py-3 px-2 border-b border-gray-800/50 hover:bg-white/5"><span>09 | Truppenleiter</span> <span class="text-gray-600">-</span></div>
+                <div class="flex justify-between py-3 px-2 border-b border-gray-800/50 hover:bg-white/5"><span>08 | Aufseher</span> <span class="text-gray-600">-</span></div>
+
+                <div class="rank-divider flex items-center text-gray-400"><span class="w-2 h-2 bg-gray-700 rounded-full mr-2"></span> Mid Rank</div>
+                <div class="flex justify-between py-3 px-2 border-b border-gray-800/50 hover:bg-white/5"><span>07 | Voll Mitglied</span> <span class="text-gray-600">-</span></div>
+                <div class="flex justify-between py-3 px-2 border-b border-gray-800/50 hover:bg-white/5"><span>06 | Stamm Mitglied</span> <span class="text-gray-600">-</span></div>
+                <div class="flex justify-between py-3 px-2 border-b border-gray-800/50 hover:bg-white/5"><span>05 | Ehrenmitglied</span> <span class="text-gray-600">-</span></div>
+                <div class="flex justify-between py-3 px-2 border-b border-gray-800/50 hover:bg-white/5"><span>04 | Senior Mitglied</span> <span class="text-gray-600">-</span></div>
+
+                <div class="rank-divider flex items-center text-gray-500"><span class="w-2 h-2 bg-red-900 rounded-full mr-2"></span> Low Rank</div>
+                <div class="flex justify-between py-3 px-2 border-b border-gray-800/50 hover:bg-white/5"><span>03 | Mitglied</span> <span class="text-gray-600">-</span></div>
+                <div class="flex justify-between py-3 px-2 border-b border-gray-800/50 hover:bg-white/5"><span>02 | Schläger</span> <span class="text-gray-600">-</span></div>
+                <div class="flex justify-between py-3 px-2 border-b border-gray-800/50 hover:bg-white/5"><span>01 | Anwärter</span> <span class="text-gray-600">-</span></div>
+                <div class="flex justify-between py-3 px-2 hover:bg-white/5"><span>00 | Novize</span> <span class="text-gray-600">-</span></div>
+
+            </div>
         </section>
     </main>
 
